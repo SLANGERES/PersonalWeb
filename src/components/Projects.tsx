@@ -4,28 +4,28 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
-      title: "zenxbattle",
+      title: "Vypaar",
       description: "Competitive programming platform with Go backend, Redis leaderboards, and 2FA authentication.",
       period: "Feb 2025 - Present",
-      tech: ["Go", "Redis", "PostgreSQL", "Docker"]
+      tech: ["Go", "Redis", "Sqlite", "Docker", "Rabbit MQ", "Microservices"]
     },
     {
-      title: "xcodeEngine", 
+      title: "Pulse Vibe", 
       description: "Dockerized code execution engine supporting multiple languages with sub-second response times.",
       period: "Feb 2025 - Present",
-      tech: ["Go", "Docker", "Microservices"]
+      tech: ["Next.js", "OAuth 2.0", "Spotify API", "Langchain"]
     },
     {
-      title: "RedisBoard",
+      title: "Todo AI Agent",
       description: "Go library for Redis-backed leaderboards using sorted sets for real-time rankings.",
       period: "Oct 2024 - Present",
-      tech: ["Go", "Redis", "Library"]
+      tech: ["Node.js", "Drizzle ORM", "OpenAI", "PostgreSQL"]
     },
     {
-      title: "AskMe",
+      title: "Syncwave",
       description: "Microservices backend with gRPC communication, MongoDB storage, and Gin routing.",
       period: "Sep 2024 - Present", 
-      tech: ["Go", "gRPC", "MongoDB", "Microservices"]
+      tech: ["Node.js", "Express", "MongoDB", "Socket.io","WebRTC", "JWT"]
     }
   ];
 

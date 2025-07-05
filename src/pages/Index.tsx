@@ -3,6 +3,9 @@ import React from 'react';
 import Header from '@/components/Header';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
+import Experience from '@/components/Experience';
+
+import Socials from '@/components/Social';
 
 const Index = () => {
   return (
@@ -11,11 +14,14 @@ const Index = () => {
         <Header />
         <Skills />
         <Projects />
+        <Experience/>
+        <Socials/>
+
         
         <footer className="mt-16 pt-8 border-t border-muted">
           <div className="text-center">
             <p className="text-xs font-mono text-muted-foreground uppercase tracking-wide">
-              Built with React & TypeScript
+              Slangres
             </p>
           </div>
         </footer>
