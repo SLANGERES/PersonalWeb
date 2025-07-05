@@ -1,50 +1,47 @@
 
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
-      skills: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "Shadcn UI", "Framer Motion"]
+      title: "Languages",
+      skills: ["Go", "JavaScript", "TypeScript", "Python", "SQL"]
     },
     {
       title: "Backend", 
-      skills: ["Node.js", "Express", "Go", "REST APIs", "Supabase", "Firebase"]
+      skills: ["Node.js", "Express", "REST APIs", "GraphQL", "gRPC"]
     },
     {
       title: "Databases",
-      skills: ["PostgreSQL", "MongoDB", "MySQL", "SQLite", "Redis", "Neo4j"]
+      skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL"]
     },
     {
-      title: "DevOps & Tools",
-      skills: ["Docker", "Kubernetes", "AWS", "GitHub Actions", "Postman", "k6", "NATS", "Zap", "Betterstack", "Grafana", "Stripe", "Razorpay", "Web3.js"]
+      title: "Infrastructure",
+      skills: ["Docker", "Kubernetes", "AWS", "CI/CD", "Linux"]
     }
   ];
 
   return (
     <section className="mb-16">
-      <h2 className="text-2xl font-bold mb-8 text-muted-foreground">Technical Skills</h2>
+      <h2 className="text-xl font-mono font-semibold mb-8">Skills</h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {skillCategories.map((category, index) => (
-          <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-            <CardHeader>
-              <CardTitle className="text-lg font-semibold">{category.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <div 
-                    key={skillIndex}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-default"
-                  >
-                    {skill}
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+          <div key={index}>
+            <h3 className="font-mono font-medium mb-3 text-sm uppercase tracking-wide">
+              {category.title}
+            </h3>
+            <div className="space-y-1">
+              {category.skills.map((skill, skillIndex) => (
+                <div 
+                  key={skillIndex}
+                  className="text-sm text-muted-foreground font-mono"
+                >
+                  {skill}
+                </div>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </section>

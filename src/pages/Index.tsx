@@ -7,15 +7,15 @@ import Projects from '@/components/Projects';
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="max-w-4xl mx-auto px-6 py-16">
         <Header />
         <Skills />
         <Projects />
         
-        <footer className="mt-16 pt-8 border-t border-border">
-          <div className="text-center text-muted-foreground">
-            <p className="text-sm">
-              Built with React, TypeScript & Tailwind CSS
+        <footer className="mt-16 pt-8 border-t border-muted">
+          <div className="text-center">
+            <p className="text-xs font-mono text-muted-foreground uppercase tracking-wide">
+              Built with React & TypeScript
             </p>
           </div>
         </footer>
