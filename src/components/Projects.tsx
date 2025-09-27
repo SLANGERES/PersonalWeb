@@ -3,9 +3,30 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
+      "title": "Service Discovery System",
+      "description": "Developed a lightweight service discovery system in Go for microservices architecture, enabling dynamic service registration, health checks, and lookup for seamless inter-service communication without manual configuration.",
+      "period": "Sep 2025 - Sep 2025",
+      "tech": ["Go", "Microservices", "gRPC", "HTTP", "Docker"],
+      "link": "https://github.com/SLANGERES/Service-Discovery"
+    },
+    {
+      "title": "CQRS Blogging Application",
+      "description": "Implemented a blogging platform in Go using the CQRS pattern, separating read and write models for scalability and performance. Features include post creation, updates, queries, and event-driven consistency across services.",
+      "period": "Sep 2025 - Sep 2025",
+      "tech": ["Go", "CQRS", "PostgreSQL", "AWS", "Docker", "Event Sourcing"],
+      "link": "https://github.com/SLANGERES/Blogging_App"
+    },
+    {
+      "title": "Centralized Logging Pipeline",
+      "description": "Built a centralized logging pipeline using Go and Python, integrated with the ELK stack (Elasticsearch, Logstash, Kibana) and RabbitMQ for log collection, processing, and real-time visualization. Orchestrated using Docker Compose for seamless local deployment.",
+      "period": "Aug 2025 - Aug 2025",
+      "tech": ["Go", "Python", "Elasticsearch", "Kibana", "Logstash", "Docker Compose", "RabbitMQ"],
+      "link": "https://github.com/SLANGERES/Logging-Pipeline"
+    },
+    {
       "title": "Appointment Management System",
       "description": "Developed a microservices-based backend in FastAPI for managing appointments, featuring RESTful APIs, secure authentication, service-to-service communication, and role-based access control.",
-      "period": "Aug 2025 - Ongoing",
+      "period": "Aug 2025 - Aug 2025",
       "tech": ["Python", "FastAPI", "PostgreSQL", "Docker", "RabbitMQ", "SwaggerAPI", "Microservices", "Redis"],
       "link": "https://github.com/yourusername/appointment-management"
       },
